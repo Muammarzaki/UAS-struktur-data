@@ -23,18 +23,25 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual(len(sukus), len(set(sukus)))
 
     def test_sort_test(self):
-        data = [
-            ("Citra", "Medan", "Batak"),
-            ("Budi", "Surabaya", "Jawa"),
-            ("Ali", "Jakarta", "Betawi"),
+        data_acak = [
+            {"nama": "Dina", "umur": 22, "teman": ["Budi", "Ali"]},
+            {"nama": "Ali", "umur": 25, "teman": ["Dina"]},
+            {"nama": "Citra", "umur": 22, "teman": ["Ali", "Budi", "Citra"]},
+            {"nama": "Ali", "umur": 20, "teman": ["Dina", "Citra"]},
+            {"nama": "Budi", "umur": 30, "teman": ["Dina"]},
+            {"nama": "Citra", "umur": 20, "teman": ["Ali"]},
         ]
-        sort_test(data)
+
+        sort_test(data_acak)
         expected = [
-            ("Ali", "Jakarta", "Betawi"),
-            ("Budi", "Surabaya", "Jawa"),
-            ("Citra", "Medan", "Batak"),
+            {"nama": "Citra", "umur": 22, "teman": ["Ali", "Budi", "Citra"]},
+            {"nama": "Ali", "umur": 20, "teman": ["Dina", "Citra"]},
+            {"nama": "Dina", "umur": 22, "teman": ["Budi", "Ali"]},
+            {"nama": "Ali", "umur": 25, "teman": ["Dina"]},
+            {"nama": "Budi", "umur": 30, "teman": ["Dina"]},
+            {"nama": "Citra", "umur": 20, "teman": ["Ali"]}
         ]
-        self.assertEqual(data, expected)
+        self.assertEqual(data_acak, expected)
 
     def test_stack_test(self):
         result = stack_test("string")

@@ -8,13 +8,13 @@ def create_a_list_test() -> list:
 
 def sort_test(data_acak):
     """
-    urutkan data berdasarkan (...) dan tidak mengembalikan apa apa
+    urutkan data berdasarkan (jumlah kawan terbanyak) dan tidak mengembalikan apa apa
     """
 
 
 def stack_test(data):
     """
-    mengembalikan string yang dibalik exp: string -> gnirts
+    mengembalikan string yang dibalik ex: string -> gnirts
     """
 
 

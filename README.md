@@ -8,17 +8,6 @@
 Selesaikan fungsi `create_a_list_test` untuk mengembalikan list berisi 5 dictionary. Setiap dictionary harus memiliki
 kunci `'nama'`, `'domisili'`, `'suku'` dengan nilai yang unik.
 
-**Contoh Output yang Diharapkan:**
-
-```python
-[
-    {"nama": "Ali", "domisili": "Jakarta", "suku": "Betawi"},
-    {"nama": "Budi", "domisili": "Surabaya", "suku": "Jawa"},
-    {"nama": "Citra", "domisili": "Medan", "suku": "Batak"},
-    {"nama": "Dina", "domisili": "Bandung", "suku": "Sunda"},
-    {"nama": "Eko", "domisili": "Makassar", "suku": "Bugis"}
-]
-```
 
 **Nilai Uji:**
 
@@ -34,30 +23,23 @@ kunci `'nama'`, `'domisili'`, `'suku'` dengan nilai yang unik.
 Selesaikan fungsi `sort_test` untuk mengurutkan list dictionary berdasarkan kunci `'nama'` secara alfabetis. Fungsi
 tidak mengembalikan nilai (sorting dilakukan in-place).
 
-**Contoh Input:**
-
-```python
-data_acak = [
-    {"nama": "Dina", "domisili": "Bandung", "suku": "Sunda"},
-    {"nama": "Ali", "domisili": "Jakarta", "suku": "Betawi"},
-    {"nama": "Citra", "domisili": "Medan", "suku": "Batak"},
-]
-sort_test(data_acak)
-```
-
-**Contoh Setelah Sorting:**
-
+**Bentuk Data yang akan di sort:**
 ```python
 [
-    {"nama": "Ali", "domisili": "Jakarta", "suku": "Betawi"},
-    {"nama": "Citra", "domisili": "Medan", "suku": "Batak"},
-    {"nama": "Dina", "domisili": "Bandung", "suku": "Sunda"},
+    {"nama": "Citra", "umur": 22, "teman": ["Ali", "Budi", "Citra"]},
+    {"nama": "Ali", "umur": 20, "teman": ["Dina", "Citra"]},
+    {"nama": "Dina", "umur": 22, "teman": ["Budi", "Ali"]},
+    {"nama": "Ali", "umur": 25, "teman": ["Dina"]},
+    {"nama": "Budi", "umur": 30, "teman": ["Dina"]},
+    {"nama": "Citra", "umur": 20, "teman": ["Ali"]}
 ]
+
 ```
+
 
 **Nilai Uji:**
 
-- Pastikan elemen dalam list diurutkan berdasarkan kunci `'nama'` secara alfabetis.
+- Pastikan elemen dalam list diurutkan berdasarkan jumlah teman terbanyak secara alfabetis.
 - Fungsi tidak mengembalikan apa pun.
 
 ---
