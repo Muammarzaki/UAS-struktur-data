@@ -120,13 +120,13 @@ Mengelola data produk (penambahan, pencarian, dan pengurutan).
 
 - **`tambah_produk(nama, stok, harga)`**:
     - Fungsi ini dimaksudkan untuk menambahkan produk ke dalam list `produk_data`.
-    - Belum diimplementasikan.
+    - (saat ini) Belum diimplementasikan.
 - **`cari_produk(nama_produk)`**:
     - Mencari produk berdasarkan nama.
-    - Saat ini hanya mengembalikan `produk[0]` tanpa logika pencarian yang benar.
+    - (saat ini) hanya mengembalikan `produk[0]` tanpa logika pencarian yang benar.
 - **`urutkan_produk(sort_berdasarkan)`**:
     - Mengurutkan produk berdasarkan nama, stok, atau harga.
-    - Belum diimplementasikan.
+    - (saat ini) Belum diimplementasikan.
 
 ---
 
@@ -136,10 +136,10 @@ Mengelola antrian pelanggan.
 
 - **`tambah_pelanggan(nama)`**:
     - Menambahkan pelanggan ke dalam antrian.
-    - Hanya mengembalikan list `antrian` tanpa benar-benar menambah pelanggan.
+    - (saat ini) Hanya mengembalikan list `antrian` tanpa benar-benar menambah pelanggan.
 - **`layani_pelanggan()`**:
     - Menghapus dan mengembalikan pelanggan pertama dari antrian.
-    - Saat ini hanya mengembalikan variabel `pelanggan` tanpa logika yang jelas.
+    - (saat ini) hanya mengembalikan variabel `pelanggan` tanpa logika yang jelas.
 
 ---
 
@@ -149,10 +149,10 @@ Mengelola transaksi pelanggan.
 
 - **`simpan_transaksi(nama_pelanggan, nama_produk, jumlah)`**:
     - Menyimpan transaksi pelanggan.
-    - Saat ini hanya mengembalikan list `transaksi` tanpa implementasi logika.
+    - (saat ini) hanya mengembalikan list `transaksi` tanpa implementasi logika.
 - **`undo_transaksi()`**:
     - Membatalkan transaksi terakhir.
-    - Saat ini hanya mengembalikan `transaksi[0]` tanpa logika undo yang benar.
+    - (saat ini) hanya mengembalikan `transaksi[0]` tanpa logika undo yang benar.
 
 ---
 
@@ -162,13 +162,13 @@ Menyediakan laporan terkait penjualan.
 
 - **`update_penjualan(nama_produk, jumlah)`**:
     - Memperbarui jumlah penjualan berdasarkan produk.
-    - Belum diimplementasikan.
+    - (saat ini) Belum diimplementasikan.
 - **`produk_terlaris()`**:
     - Mengembalikan produk dengan jumlah penjualan tertinggi.
-    - Saat ini hanya mengembalikan `penjualan_data[0]`.
+    - (saat ini) hanya mengembalikan `penjualan_data[0]`.
 - **`stok_kritis()`**:
     - Mengembalikan produk dengan stok terendah (3 teratas).
-    - Menggunakan slicing `produk_data[:3]` tanpa logika pengurutan.
+    -  (saat ini) Menggunakan slicing `produk_data[:3]` tanpa logika pengurutan.
 
 ---
 
