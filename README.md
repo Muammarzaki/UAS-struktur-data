@@ -98,3 +98,9 @@ customer = [5, 3, 4, 2, 8, 6]
 
 - Pastikan waktu total layanan di kedua kasir dihitung dengan benar.
 - Kasir yang selesai lebih dulu melayani pelanggan berikutnya.
+
+
+## validasi
+```shell
+python -m unittest validation/assignment_check.py
+```
