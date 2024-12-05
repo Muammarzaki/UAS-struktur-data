@@ -53,8 +53,8 @@ utama seperti pencarian, pengurutan, dan simulasi sistem operasional.
 1. Pengelolaan Data Produk
     * Struktur Data: List atau Array
     * Fitur:
-        * Tambahkan produk baru (dengan data: nama, ID, stok, harga).
-        * Cari produk berdasarkan ID.
+        * Tambahkan produk baru (dengan data: nama, stok, harga).
+        * Cari produk berdasarkan nama.
         * Tampilkan daftar produk yang diurutkan berdasarkan harga (gunakan metode sorting sederhana, misalnya Bubble
           Sort).
 2. Sistem Antrian Pelanggan
