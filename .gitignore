@@ -1,0 +1,5 @@
+.venv
+.env
+.idea
+.private
+github-markdown-css-5.8.1
