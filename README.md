@@ -12,15 +12,33 @@ branch bahasa yang dipelajari.
 ### STRUKTUR TEMPLATE
 
 ```mermaid
-graph LR
+flowchart LR
     / --> working_directory
     / --> validation_directory
+    working_directory --> working_file.py
+    working_file.py --> fitur_pengelolaan_data_produk
+    working_file.py --> fitur_sistem_antrian_pelangan
+    working_file.py --> fitur_simulasi_transaksi
+    working_file.py --> fitur_laporan_penjualan
+    working_file.py --> main
+    fitur_pengelolaan_data_produk --> tambah_produk
+    fitur_pengelolaan_data_produk --> cari_produk
+    fitur_pengelolaan_data_produk --> urutkan_produk
+    fitur_sistem_antrian_pelangan --> tambah_pelanggan
+    fitur_sistem_antrian_pelangan --> layani_pelanggan
+    fitur_simulasi_transaksi --> simpan_transaksi
+    fitur_simulasi_transaksi --> undo_transaksi
+    fitur_laporan_penjualan --> update_penjualan
+    fitur_laporan_penjualan --> produk_terlaris
+    fitur_laporan_penjualan --> stok_kritis
+
+
 ```
 
 - **working_directory** adalah tempat dimana kalian akan menulis kode implementasi dari studi case tetapi tidak merubah
   nama function yang telah disediakan.
 - **validation_directory** adalah tempat dimana area yang dilarang untuk di edit atau di otak-atik.
-
+- **working_file.py** adalah file dimana logic dari aplikasi di tulis dan terdapat beberapa fungsi yagn masih kosong.
 ---
 
 ### Studi Kasus UAS: Sistem Manajemen Toko Sederhana
