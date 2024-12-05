@@ -31,16 +31,11 @@ class TestFunctions(unittest.TestCase):
             {"nama": "Budi", "umur": 30, "teman": ["Dina"]},
             {"nama": "Citra", "umur": 20, "teman": ["Ali"]},
         ]
+        expected = data_acak.copy()
 
         sort_test(data_acak)
-        expected = [
-            {"nama": "Citra", "umur": 22, "teman": ["Ali", "Budi", "Citra"]},
-            {"nama": "Ali", "umur": 20, "teman": ["Dina", "Citra"]},
-            {"nama": "Dina", "umur": 22, "teman": ["Budi", "Ali"]},
-            {"nama": "Ali", "umur": 25, "teman": ["Dina"]},
-            {"nama": "Budi", "umur": 30, "teman": ["Dina"]},
-            {"nama": "Citra", "umur": 20, "teman": ["Ali"]}
-        ]
+
+        expected.sort(key=lambda x: len(x['teman']), reverse=True)
         self.assertEqual(data_acak, expected)
 
     def test_stack_test(self):
