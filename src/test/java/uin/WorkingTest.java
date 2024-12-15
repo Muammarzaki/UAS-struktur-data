@@ -4,6 +4,8 @@ import static org.assertj.core.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -46,7 +48,8 @@ class WorkingTest {
                 List.of("agung", "musisi"),
                 List.of("sari", "penjahit")
         );
-        List<List<String>> sortedList = Working.sortTest(dataBiodata);
+
+        List<List<String>> sortedList = Working.sortTest(new ArrayList<>(dataBiodata));
         assertThatList(sortedList)
                 .hasSameSizeAs(dataBiodata)
                 .isSortedAccordingTo(Comparator.comparing(item -> item.get(1)))
