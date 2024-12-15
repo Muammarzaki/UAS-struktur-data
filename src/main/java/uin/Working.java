@@ -7,8 +7,7 @@ import java.util.List;
  */
 public class Working {
     /**
-     * @return harus dapat mengembalikan nilai sebuah list 2 dimensi yang terdiri dari 10 entry/baris dan 2 colom
-     * dan tiap colom terdiri dari nama [string] dan pekerjaan [string].
+     * @return harus dapat mengembalikan nilai sebuah list 2 dimensi yang terdiri dari 10 entry/baris dan 3 colom
      */
     public static List<List<String>> createAListsTest() {
         return null;

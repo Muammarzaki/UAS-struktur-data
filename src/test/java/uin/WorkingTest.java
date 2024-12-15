@@ -16,9 +16,10 @@ class WorkingTest {
                 .isNotNull()
                 .hasSize(10)
                 .allSatisfy(
-                        sublist -> assertThat(sublist).hasSize(2)
+                        sublist -> assertThat(sublist)
+                                .hasSize(3)
                 )
-        ;
+                .doesNotHaveDuplicates();
     }
 
     @Test

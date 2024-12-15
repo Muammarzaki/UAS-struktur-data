@@ -10,7 +10,7 @@ Selesaikan metode `createAListsTest` untuk mengembalikan sebuah list yang berisi
 **Nilai Uji:**
 
 - Pastikan list memiliki ukuran 10.
-- Pastikan setiap elemen adalah sublist dengan 2 elemen string.
+- Pastikan setiap elemen adalah sublist dengan 3 elemen string.
 - Pastikan nilai dalam sublist unik di seluruh list.
 
 ---
