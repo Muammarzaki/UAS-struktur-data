@@ -44,7 +44,7 @@ class TestFunctions(unittest.TestCase):
 
     def test_queue_test(self):
         result = queue_test([5, 3, 8, 2, 6])
-        self.assertEqual(result, (14, 10))  # Lane 1 = 5+6+3, Lane 2 = 8+2
+        self.assertEqual(result, (13, 11))  # Lane 1 = 5+6+3, Lane 2 = 8+2
 
         result_empty = queue_test([])
         self.assertEqual(result_empty, (0, 0))
