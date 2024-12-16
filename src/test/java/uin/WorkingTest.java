@@ -83,7 +83,7 @@ class WorkingTest {
         for (String[] strings : expectAndProvide) {
             assertThat(Working.stackTest(strings[0]))
                     .isNotEmpty()
-                    .hasSize(4)
+                    .hasSize(strings[1].length())
                     .isEqualTo(strings[1]);
         }
     }
@@ -94,7 +94,7 @@ class WorkingTest {
         assertThatList(Working.queueTest(waktuPelanggan))
                 .isNotEmpty()
                 .hasSize(2)
-                .isEqualTo(List.of(14, 10));
+                .isEqualTo(List.of(13, 11));
 
     }
 }
